@@ -30,7 +30,7 @@ body {
     border-radius: 50%;
     margin-bottom: 16px;
     background-color: var(--secondary);
-    background-image: url('/public/assets/IMG-20250902-WA0075.jpg');
+    background-image: url('./public/assets/IMG-20250902-WA0075.jpg');
     background-size: cover;
     background-position: center;
 }
