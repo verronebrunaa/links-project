@@ -75,6 +75,67 @@ h1 {
     border-color: var(--primary-color);
 }
 
+.alert-box {
+    width: 100%;
+    max-width: 600px;
+    background: linear-gradient(135deg, #7c3aed 0%, #a78bfa 100%);
+    color: white;
+    padding: 24px;
+    border-radius: 16px;
+    margin: 40px 0 120px 0;
+    box-shadow: 0 8px 16px rgba(124, 58, 237, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.alert-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    color: white;
+}
+
+.alert-box p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.alert-box ul {
+    margin: 12px 0 12px 24px;
+    line-height: 1.8;
+}
+
+.alert-box li {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.alert-box strong {
+    color: white;
+    font-weight: 700;
+}
+
+.copy-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.copy-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.copy-btn.copied {
+    background: rgba(34, 197, 94, 0.4);
+    border-color: rgba(34, 197, 94, 0.6);
+}
+
 footer {
     position: fixed;
     bottom: 0;
