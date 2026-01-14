@@ -1,0 +1,128 @@
+:root {
+    --primary-color: #7c3aed;
+    --secondary: #ffffff;
+    --bg-color: rgba(229, 231, 235, 0.5);
+    --text-color-primary: #64748b;
+    --text-color-secondary: #7c3aed;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    background-color: var(--secondary);
+    background-image: url('/public/assets/IMG-20250902-WA0075.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.bio {
+    font-size: 1rem;
+    color: var(--text-color-primary);
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.links-container {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.link-card {
+    background: var(--secondary);
+    padding: 16px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color-primary);
+    font-weight: 600;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #e2e8f0;
+}
+
+.link-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-color);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    margin-top: auto;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #1e293b;
+    padding: 16px;
+    width: 100%;
+}
+
+footer a {
+    color: var(--text-color-primary);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.social-icons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.social-icons a {
+    font-size: 1.4rem;
+}
+
+footer p {
+    color: var(--text-color-primary);
+    font-size: 1rem;
+    margin: 0;
+}
+
+.footer-text {
+    width: 100%;
+    text-align: center;
+}
+
+.footer-text a {
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: var(--primary-color);
+}
